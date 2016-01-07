@@ -6,7 +6,7 @@ feature 'baby form' do
 
     expect(baby_form_template).to match(/form_for/)
   end
-
+  
   context 'submitting a form for a new baby' do
     it 'generates correctly structured params' do
       visit new_baby_path

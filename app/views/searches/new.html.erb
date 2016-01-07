@@ -1,1 +1,14 @@
-<!-- Your form goes here! -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <form action="/searches" method="post">
+            <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+            <input type="text" name="q">
+            <input type="submit"  value="Search">
+      </form>
+  </body>
+</html>
